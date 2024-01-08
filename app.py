@@ -79,7 +79,10 @@ input_text = st.text_input('Masukkan Pertanyaan Anda')
 # Create button
 btn = st.button('Submit')
 
+predict_text = ''
 # Create output text
 if btn:
-    # predict_text = 
-    st.markdown('a', unsafe_allow_html=True)
+    predict_text = predict([input_text])
+    
+
+st.markdown(predict_text, unsafe_allow_html=True)
