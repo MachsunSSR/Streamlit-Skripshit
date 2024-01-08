@@ -81,5 +81,5 @@ btn = st.button('Submit')
 
 # Create output text
 if btn:
-    predict_text = predict([input_text])
-    st.markdown(predict_text, unsafe_allow_html=True)
+    # predict_text = 
+    st.markdown(predict([input_text]), unsafe_allow_html=True)
