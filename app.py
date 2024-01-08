@@ -57,8 +57,8 @@ def predict(kalimat):
     stemmer = factory.create_stemmer()
     kalimat = [stemmer.stem(x) for x in kalimat]
 
-    stopwords = stopwords.words('indonesian')
-    kalimat = [' '.join([word for word in x.split() if word not in (stopwords)]) for x in kalimat]
+    stopword = stopwords.words('indonesian')
+    kalimat = [' '.join([word for word in x.split() if word not in (stopword)]) for x in kalimat]
 
     # TF-IDF
     kalimat_tfidf = tfidf.transform(kalimat)
