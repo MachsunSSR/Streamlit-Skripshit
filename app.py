@@ -82,4 +82,4 @@ btn = st.button('Submit')
 # Create output text
 if btn:
     predict_text = predict([input_text])
-    st.write(predict_text)
+    st.markdown(predict_text)
